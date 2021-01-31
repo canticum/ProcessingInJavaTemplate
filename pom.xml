@@ -19,7 +19,7 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>org.clojars.anthonygalea</groupId>
+            <groupId>quil</groupId>
             <artifactId>processing-core</artifactId>
             <version>[3.5.3,)</version>
         </dependency>
