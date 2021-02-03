@@ -1,6 +1,24 @@
-
+/*
+ * Copyright 2021 Jonathan Chang, Chun-yien <ccy@musicapoetica.org>.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 import processing.core.*;
 
+/**
+ *
+ * @author Jonathan Chang, Chun-yien <ccy@musicapoetica.org>
+ */
 public class MySketch extends PApplet {
 
   PImage p3Img;
@@ -14,7 +32,7 @@ public class MySketch extends PApplet {
   @Override
   public void setup() {
 
-    p3Img = loadImage(getClass().getResource("nctu.png").getFile());
+    p3Img = loadImage("nctu.png");
   }
 
   @Override
@@ -29,6 +47,6 @@ public class MySketch extends PApplet {
   public static void main(String[] args) {
 
     System.setProperty("sun.java2d.uiScale", "1.0");
-    PApplet.main("MySketch");
+    PApplet.main(MySketch.class);
   }
 }
